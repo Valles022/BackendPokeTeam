@@ -25,7 +25,7 @@ const setTeamToUser = (req, res) => {
 }
 
 const addPokemonToTeam = async (req, res) => {
-    let pokemonName = req.body.name;    
+    let pokemonName = req.body.name;
     let [pokeApiError, pokeApiResponse] = await to(axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName.toLowerCase()}`));
     if (pokeApiError) {
         return res.status(400).json({message: pokeApiError});
@@ -37,7 +37,7 @@ const addPokemonToTeam = async (req, res) => {
         abilities: pokeApiResponse.data.abilities,
         weight: pokeApiResponse.data.weight,
         height: pokeApiResponse.data.height,
-        image: pokeApiResponse.data.sprites.front_default
+        image: pokeApiResponse.data.sprites.other.dream_world.front_default
     }
     let [errorAdd, response] = await to(teamsController.addPokemon(req.user.userId, pokemon));
     if (errorAdd) {

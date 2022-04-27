@@ -12,7 +12,7 @@ router.route('/login')
     .post(authHttpHandler.login);
 
 router.route('/register')
-    .post(image,authHttpHandler.register);
+    .post(upload.single('file'),authHttpHandler.register);
 
 router.route('/getAll')
     .get(authHttpHandler.getAll);

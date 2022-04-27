@@ -2,6 +2,7 @@ const express = require('express');
 const middlewares = require('./middlewares');
 const port = 3000;
 
+require('dotenv').config();
 require('./database');
 //Routes
 const authRoutes = require('./auth/auth.router').router;
