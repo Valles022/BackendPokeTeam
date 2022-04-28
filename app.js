@@ -1,6 +1,5 @@
 const express = require('express');
 const middlewares = require('./middlewares');
-const port = 3000;
 
 require('dotenv').config();
 require('./database');
@@ -16,7 +15,7 @@ middlewares.setupMiddlewares(app);
 app.use('/auth', authRoutes);
 app.use('/teams', teamRoutes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 5000, () => {
     console.log('Server started at port ' + port);
 })
 
