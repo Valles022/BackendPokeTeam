@@ -1,5 +1,6 @@
 const authmiddleware = require('./tools/auth-middleware');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const corsOptions = { origin: "https://poke-team-frontend.herokuapp.com/" }
 

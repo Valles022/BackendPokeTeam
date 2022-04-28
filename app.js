@@ -1,6 +1,5 @@
 const express = require('express');
 const middlewares = require('./middlewares');
-const cors = require("cors")
 
 require('dotenv').config();
 require('./database');
