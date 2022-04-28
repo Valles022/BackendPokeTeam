@@ -8,7 +8,7 @@ const getTeamFromUser = async (req, res) => {
     let team = await teamsController.getTeamOfUser(req.user.userId);
 
     if (team && user) {
-        res.header('Access-Control-Allow-Origin', 'http://localhost:8080');
+        res.header('Access-Control-Allow-Origin');
         res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
         res.header('Access-Control-Allow-Credentials', true);
