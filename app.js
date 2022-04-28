@@ -13,7 +13,7 @@ const app = express();
 app.use('/uploads', express.static(__dirname +'/uploads'))
 middlewares.setupMiddlewares(app);
 
-app.get('/', () => {
+app.use('/', () => {
     res.send('Pagina principal de backend');
 });
 app.use('/auth', authRoutes);
