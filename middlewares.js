@@ -4,8 +4,7 @@ const cors = require('cors');
 
 const corsOptions = {
     "origin": "*",
-    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
-    "preflightContinue": false,
+    "methods": "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
     "optionsSuccessStatus": 204
 }
 
