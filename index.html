@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend PokeTeam</title>
+</head>
+<body>
+    <main>
+        <!-- <h1>
+            Pagina principal del Backend
+        </h1>
+        <p>En este apartado vamos a ver todas las funcionalidades de las que se encarga nuestro backend</p> -->
+        <h1 id="backend-poke-api">Backend poke Api</h1>
+        <p>Esta aplicacion esta pensada para crear nuevos usuarios y que cada usuario pueda crearse su propio equipo pokemon con los datos recogidos de la <a target="__blank" href="https://pokeapi.co/">pokeapi</a></p>
+        <pre><code class="lang-bash"><span class="hljs-comment"># Tecnologias utilizadas:</span>
+            - <span class="hljs-keyword">Node</span> <span class="hljs-title">JS</span>
+            - Express
+            - Mongodb
+        </code></pre>
+        <ul>
+        <li>Es neceario instalar las dependencias de npm y crear un archivo database.js en la raiz con la conexión a la base de datos.</li>
+        <li>Es recomendable que tanto la url como el usuario y la contraseña esten en un archivo .env</li>
+        <li>Esta app está pensada para funcionar junto al proyecto FrontendPokeTeam</li>
+        <li>Todas las funcinalidades cuentan con tests unitarios con mocha</li>
+        </ul>
+        <h1 id="autenticacion-">Autenticacion :</h1>
+        <ul>
+        <li>Se encarga de la autenticación mediante tokens JWT</li>
+        <li>Registrar usuarios nuevos</li>
+        <li>Recoger la informacion de todos los usuarios</li>
+        </ul>
+        <h1 id="equipos-">Equipos :</h1>
+        <ul>
+        <li>Añadir pokemon al usuario</li>
+        <li>Borrar pokemon del usuario</li>
+        <li>Coger la informacion de todo el equipo pokemon del usuario</li>
+        </ul>
+
+    </main>
+</body>
+</html>
